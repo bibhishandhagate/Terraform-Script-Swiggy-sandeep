@@ -31,7 +31,7 @@ resource "aws_security_group" "Project-SG" {
 
 
 resource "aws_instance" "web" {
-  ami                    = "ami-02d26659fd82cf299"
+  ami                    = "ami-0317b0f0a0144b137"
   instance_type          = "c7i-flex.large"
   key_name               = "sandeep"
   vpc_security_group_ids = [aws_security_group.Project-SG.id]
